@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        sh 'docker run --rm -it -p 3000:3000/tcp my-app-one:latest'
+        sh 'docker run --rm -i -p 3000:3000/tcp my-app-one:latest'
       }
     }
 
